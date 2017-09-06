@@ -1,4 +1,7 @@
 #! /usr/bin/python
+
+# General function for several Euler exercises
+
 import math
 def main():
   temp = True
