@@ -1,5 +1,5 @@
 import math
-
+# The file contains a hundred 50 digits numbers, find the the first ten digits of the sum.
 file = open('euler13.txt','r')
 
 file = file.readlines()

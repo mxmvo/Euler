@@ -4,7 +4,8 @@ import math
 '''
 Say you want to find the devisors of x/2 for a number x.
 Then notice you can write x=2^i*y where y is an odd number with k divisors. 
-Now the number of divisors for x are (i+1)*k and thus for x/2 is i*k
+In fact k is the number of divisors of x divided by i+1 
+Now the number of divisors for x are (i+1)*k and thus for x/2 is i*k = i/(i+1)*numdiv(x)
 '''
 def main():
   # note the nth traingle number is n(n+1)/2
@@ -24,7 +25,7 @@ def main():
       notthere = False
   print(n*(n+1)/2)
 
-
+# calculate the number of twos
 def numtwos(n):
   j=0
   while n%2==0:
