@@ -1,8 +1,11 @@
 import math
 
+#Goal: Find the first triangle nubmer that has over 500 divisors
+
 def main():
+  # note the nth traingle number is n(n+1)/2
+  # n and n+1 are relative prime so the only common divisor is 1.   
   n=1
-  i=1
   current = 1
   follow = 2
 
@@ -12,6 +15,8 @@ def main():
     print(n, current, follow , flush=True)
   print(n) 
 
+
+# Calculate the number of divisors for a number n
 def numdiv(n):
   j=0
   for i in range(1,int(n**.5)):
@@ -22,5 +27,5 @@ def numdiv(n):
   return j
 
 main()
-#print(numdiv(5984*5985/2))
+
 
